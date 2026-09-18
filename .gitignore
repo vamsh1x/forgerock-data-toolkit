@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Local secrets and runtime artefacts -- never commit these
+config.json
+config.local.json
+.env
+*.journal.jsonl
+reports/
+*.csv
+!examples/*.csv
+!examples/*.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
