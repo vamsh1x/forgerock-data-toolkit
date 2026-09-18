@@ -1,0 +1,5 @@
+action,resource,object_id,field,old_value,new_value,reason
+patch,managed/user,9dce2a77-aaaa-4b1c-9f2e-0123456789ab,mail,old.mail@example.com,new.mail@example.com,EXAMPLE ROW - fake data: dedupe winning address after correlation collision
+patch,managed/user,7b1f3c55-bbbb-4d2e-8a1f-9876543210fe,employeeNumber,,E10042,EXAMPLE ROW - fake data: backfill missing correlation attribute
+delete,repo/link,3f8e91aa-cccc-4a5b-9d3c-abcdef012345,,,,EXAMPLE ROW - fake data: remove orphaned link whose target was deprovisioned
+create,managed/user,,,,"{""userName"": ""example.jdoe"", ""mail"": ""example.jdoe@example.com"", ""givenName"": ""Example"", ""sn"": ""Doe""}",EXAMPLE ROW - fake data: recreate a source-missing managed object
